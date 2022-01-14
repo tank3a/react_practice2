@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MOVIEWEB</title>
+  </head>
+  <body>
+    <span>Click: 0</span>
+    <button id="btn">Click Me</button>
+  </body>
+  <script>
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
+
+    let counter = 0;
+    function handleClick(e) {
+      counter++;
+      span.innerText = `Click: ${counter}`;
+    }
+    button.addEventListener("click", handleClick);
+  </script>
+</html>
